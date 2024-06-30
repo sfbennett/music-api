@@ -23,7 +23,7 @@ Album HTTP routes:
 - GET - all albums
 - GET - a random album
 - GET - album by ID
-- GET - all albums by specific artist ID (e.g. ID 6 for Black Sabbath to retrieve all of their albums)
+- GET - all albums by artist ID (e.g. ID 6 for Black Sabbath to retrieve all of their albums)
 - POST - add a new album
 - DELETE - remove album by ID
 
@@ -35,7 +35,7 @@ Artist HTTP routes:
 - POST - add a new artist
 - DELETE - remove an artist by ID
 
-## Technologies used
+## Tools and Technologies
 
 - Node.js
 - Express.js
