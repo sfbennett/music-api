@@ -38,7 +38,7 @@ router.get("/", async (req, res) => {
 router.get("/random-artist", async (req, res) => {
   try {
     const result = await pool.query(
-      "SELECT id, name, bio, genre FROM artists ORDER BY RANDOM() LIMIT 1"
+      "SELECT id, name, bio, genre, spotify_link FROM artists ORDER BY RANDOM() LIMIT 1"
     );
     res.json(result.rows[0]);
   } catch (err) {
