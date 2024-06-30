@@ -41,7 +41,7 @@ router.get("/", async (req, res) => {
 router.get("/random-album", async (req, res) => {
   try {
     const result = await pool.query(
-      "SELECT id, title, TO_CHAR(release_date, 'YYYY-MM-DD') as release_date, genre FROM albums ORDER BY RANDOM() LIMIT 1"
+      "SELECT id, title, TO_CHAR(release_date, 'YYYY-MM-DD') as release_date, genre, album_art_url FROM albums ORDER BY RANDOM() LIMIT 1"
     );
     res.json(result.rows[0]);
   } catch (err) {
