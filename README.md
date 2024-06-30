@@ -4,18 +4,6 @@ A RESTful music API that I created with Express.js and connected up to a Postgre
 
 The API manages data from various endpoints and is hosted on Render. The PostgreSQL database was first created using Postbird and then hosted on Supabase.
 
-## Installation
-
-```
-git clone https://github.com/yourusername/music-api.git
-cd music-api
-npm install
-```
-
-## Running the server
-
-`node app.js`
-
 ## API Endpoints
 
 Album HTTP routes:
@@ -46,3 +34,15 @@ Artist HTTP routes:
 - node-postgres
 - Render for API hosting
 - Supabase for hosting a PostgreSQL database
+
+## Installation
+
+```
+git clone https://github.com/yourusername/music-api.git
+cd music-api
+npm install
+```
+
+### Running the server
+
+`node app.js`
