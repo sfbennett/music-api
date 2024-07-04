@@ -83,10 +83,10 @@ Remove an artist by ID
 
 - Node.js
 - Express.js
-- Routers, Route Handlers
-- Middleware
+- Routers, Route Handlers and Middleware
 - HTTP Methods
 - JSON
 - node-postgres
 - Render for API hosting
-- Supabase for hosting a PostgreSQL database
+- Postbird (for accessing the database locally)
+- Supabase for hosting the PostgreSQL database
