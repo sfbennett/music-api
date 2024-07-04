@@ -12,24 +12,72 @@ cd music-api
 npm install
 ```
 
-## API Endpoints
+To set up this project locally, you'll also need to run the SQL included in the `db` folder.
 
-### Album HTTP routes:
+## Running the Server
 
-- `GET` - all albums
-- `GET` - a random album
-- `GET` - album by ID
-- `GET` - all albums by artist ID (e.g., ID 6 for Black Sabbath to retrieve all of their albums)
-- `POST` - add a new album
-- `DELETE` - remove album by ID
+`node app.js`
 
-### Artist HTTP routes:
+## Album API Endpoints
 
-- `GET` - all artists
-- `GET` - a random artist
-- `GET` - artist by ID
-- `POST` - add a new artist
-- `DELETE` - remove an artist by ID
+Get all albums
+
+- Method: `GET`
+- URL: `/albums`
+
+Get a random album
+
+- Method: `GET`
+- URL: `/albums/random-album`
+
+Get an album by ID
+
+- Method: `GET`
+- URL: `/albums/:albumId`
+
+Get all albums by a specific artist ID
+
+- Method: `GET`
+- URL: `/album-artists/:artistId`
+
+(e.g., ID 6 for Black Sabbath to retrieve all of their albums)
+
+Add a new album
+
+- Method: `POST`
+- URL: `/albums`
+
+Remove an album by ID
+
+- Method: `DELETE`
+- URL: `/albums/:albumId`
+
+## Artist API Endpoints
+
+Get all artists
+
+- Method: `GET`
+- URL: `/artists`
+
+Get a random album
+
+- Method: `GET`
+- URL: `/artists/random-artist`
+
+Get an artist by ID
+
+- Method: `GET`
+- URL: `/artists/:artistId`
+
+Add a new artist
+
+- Method: `POST`
+- URL: `/artists`
+
+Remove an artist by ID
+
+- Method: `DELETE`
+- URL: `/artists/:artistId`
 
 ## Tools and Technologies
 
