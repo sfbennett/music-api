@@ -2,7 +2,7 @@
 
 A RESTful music API that I created with Express.js and connected up to a PostgreSQL database.
 
-The API manages data from various endpoints and is hosted on Render. The PostgreSQL database was first created using Postbird and then hosted on Supabase.
+The API manages data from various endpoints and is hosted on Render. The PostgreSQL database was first created using SQL and then hosted on Supabase.
 
 ## Installation
 
